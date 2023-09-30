@@ -138,7 +138,7 @@ function numPointsScored(playerName) {
       return gameObj.home.players[player].points;
     }
   }
-
+  debugger;
   for (const player in gameObj.away.players) {
     if (player === playerName) {
       return gameObj.away.players[player].points;
@@ -155,7 +155,7 @@ function shoeSize(playerName) {
       return gameObj.home.players[player].shoe;
     }
   }
-
+  debugger;
   for (const player in gameObj.away.players) {
     if (player === playerName) {
       return gameObj.away.players[player].shoe;
@@ -182,6 +182,7 @@ function playerNumbers(teamName) {
   }
 
   return jerseyNumbers;
+  debugger;
 }
 
 function playerStats(playerName) {
@@ -192,6 +193,7 @@ function playerStats(playerName) {
       return gameObj.home.players[player];
     }
   }
+  debugger;
   for (const player in gameObj.away.players) {
     if (player === playerName) {
       return gameObj.away.players[player];
@@ -199,6 +201,7 @@ function playerStats(playerName) {
   }
 
   return "Player not found";
+  debugger;
 }
 console.log(playerStats("Alan Anderson"));
 
